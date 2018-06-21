@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+body
+{
+    font-family: monospace;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+/*HEADER*/
+
+.header {
+    background-color:whitesmoke;
+    text-align: center;
+}
+
+.logo
+{
+    width: 150px;
+}
+
+ul
+{
+    list-style: circle;
+}
+
+li
+{
+    display: inline-block;
+    padding: 25px;
+}
+
+a
+{
+    border: black;
+}
+
+.btn {
+  text-decoration: none;
+  color: #5753db;
+  border:solid #5753db 2px;
+  border-radius: 5px;
+  font-size: 100%;
+  padding: 5px 15px;
+
+}
+
+.btn:hover {
+  background-color: #5753db;
+  color: white;
+}
+
+/*HERO*/
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  height: 400px;
+}
+
+.hero .content {
+    grid-column: 2;
+    text-align: center;
+    margin: auto;
+}
+
+.hero .content h1 {
+  font-family: 'Comfortaa', cursive;
+  color: black;
+  font-size: 400%;
+  margin: auto;
+  padding-bottom: 5%;
+}
+
+input {
+    padding:5px;
+    border:solid #ccc 1px;
+    font-family: monospace;
+    border-radius: 5px;
+}
+
+input:focus {
+    border-color: #5753db;
+}
+
+input[type=submit] {
+    padding:5px 15px;
+    background:#ccc;
+    border:0 none;
+}
+
+input[type=submit]:focus {
+    background:#5753db;
+    color: white;
+}
+
+/*TEXT BOX*/
+
+.main
+{
+    text-align: left;
+    background-color: #f4f4f4;
+    padding: 10% 10%;
+    line-height: 2;
+}
+
+/*3 COLUMN IMAGES*/
+
+.grid-container1 {
+  height: 40%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 10%;
+}
+
+.grid-container1 div {
+  text-align: center;
+}
+
+/*FOOTER*/
+
+.img-social {
+    height: 40px;
+    width: 40px;
+}
+
+.grid-container2 {
+  background-color: #f4f4f4;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 2fr
+}
+
+.grid-container2 div {
+  vertical-align: middle;
+  text-align: center;
+}
