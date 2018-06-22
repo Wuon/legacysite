@@ -2,7 +2,7 @@
 
 body
 {
-    font-family: monospace;
+    font-family: Raleway;
     padding: 0px;
     margin: 0px;
     height: 100%;
@@ -38,40 +38,75 @@ a
 }
 
 .btn {
-  text-decoration: none;
-  color: #5753db;
-  border:solid #5753db 2px;
-  border-radius: 5px;
-  font-size: 100%;
-  padding: 5px 15px;
+    font-family: Raleway;
+    text-decoration: none;
+    color: black;
+    border-radius: 40px;
+    font-size: 100%;
+    padding: 15px 60px;
 
 }
 
 .btn:hover {
-  background-color: #5753db;
-  color: white;
+  
 }
 
 /*HERO*/
-
-.hero {
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-  height: 400px;
+.parallax {
+    display: flex;
+    flex: 1 0 auto;
+    position: relative;
+    z-index: -1;
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transform: translateZ(-1px) scale(2);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("/assets/san-francisco-nights_4460x4460.jpg");
+    background-size: cover;
+    color: white;
 }
 
-.hero .content {
+.border{
+    border: 10px solid rgba(255, 255, 255, 0.5);
+    margin: 10px;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.MainContainer {
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.hero {
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    height: 50vh;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("/assets/san-francisco-nights_4460x4460.jpg");
+    background-size: cover;
+    background-position: 8px 8px;
+    border: 0.5rem solid;
+}
+
+.parallax .content {
     grid-column: 2;
     text-align: center;
     margin: auto;
 }
 
-.hero .content h1 {
-  font-family: 'Comfortaa', cursive;
-  color: black;
-  font-size: 400%;
-  margin: auto;
-  padding-bottom: 5%;
+.parallax .content h2{
+    margin-bottom: -0.5em;
+}
+
+.parallax .content h1 {
+    font-size: 500%;
+    margin: auto;
+    padding-bottom: 0.2em;
 }
 
 input {
@@ -102,7 +137,7 @@ input[type=submit]:focus {
 {
     text-align: left;
     background-color: #f4f4f4;
-    padding: 10% 10%;
+    padding: 20% 20%;
     line-height: 2;
 }
 
