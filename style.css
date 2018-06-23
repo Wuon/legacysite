@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Comfortaa');
-
 body
 {
     font-family: Raleway;
@@ -9,46 +7,21 @@ body
     width: 100%;
 }
 
-/*HEADER*/
-
-.header {
-    background-color:whitesmoke;
-    text-align: center;
-}
-
-.logo
-{
-    width: 150px;
-}
-
-ul
-{
-    list-style: circle;
-}
-
-li
-{
-    display: inline-block;
-    padding: 25px;
-}
-
-a
-{
-    border: black;
-}
-
-.btn {
+.content a {
     font-family: Raleway;
     text-decoration: none;
     color: black;
-    border-radius: 40px;
+    background-color: white;
+    border: solid #ffffff;
+    border-radius: 30px;
+    border-width: 2px;
     font-size: 100%;
-    padding: 15px 60px;
-
+    padding: 15px 45px;
 }
 
 .btn:hover {
-  
+  color: black;
+  background-color:#eeeeee;
 }
 
 /*HERO*/
@@ -62,35 +35,18 @@ a
     justify-content: center;
     align-items: center;
     transform: translateZ(-1px) scale(2);
-    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("/assets/san-francisco-nights_4460x4460.jpg");
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/assets/san-francisco-nights_4460x4460.jpg");
+    background-position: 0;
     background-size: cover;
     color: white;
 }
 
-.border{
-    border: 10px solid rgba(255, 255, 255, 0.5);
-    margin: 10px;
-    padding: 1rem;
-    border-radius: 15px;
-}
-
-.MainContainer {
+.container {
     perspective: 1px;
     transform-style: preserve-3d;
     height: 100vh;
     overflow-x: hidden;
     overflow-y: scroll;
-}
-
-.hero {
-    color: white;
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    height: 50vh;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("/assets/san-francisco-nights_4460x4460.jpg");
-    background-size: cover;
-    background-position: 8px 8px;
-    border: 0.5rem solid;
 }
 
 .parallax .content {
@@ -106,69 +62,70 @@ a
 .parallax .content h1 {
     font-size: 500%;
     margin: auto;
-    padding-bottom: 0.2em;
-}
-
-input {
-    padding:5px;
-    border:solid #ccc 1px;
-    font-family: monospace;
-    border-radius: 5px;
-}
-
-input:focus {
-    border-color: #5753db;
-}
-
-input[type=submit] {
-    padding:5px 15px;
-    background:#ccc;
-    border:0 none;
-}
-
-input[type=submit]:focus {
-    background:#5753db;
-    color: white;
+    padding-bottom: 0.5em;
 }
 
 /*TEXT BOX*/
 
 .main
 {
-    text-align: left;
-    background-color: #f4f4f4;
-    padding: 20% 20%;
+    background-color: #ffffff;
     line-height: 2;
+    height: 100vh;
+    padding: 0 25% 0 25%;
 }
 
-/*3 COLUMN IMAGES*/
-
-.grid-container1 {
-  height: 40%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 10%;
+.main h2{
+    text-align: right;
+    display:inline;
+    font-size: 7em;
+    background-color:black;
+    color:#ffffff;
+    padding: 0px 30px 0px 30px;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 5px;
+    margin-top: 7.5%;
 }
 
-.grid-container1 div {
-  text-align: center;
+.main p{
+    font-size: 1.2em;
+    text-align: justify;
+    letter-spacing: -1px;
+    margin-bottom: 2em;
 }
 
-/*FOOTER*/
-
-.img-social {
-    height: 40px;
-    width: 40px;
+.phone{
+    z-index: 2;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+    width: 50%;
+    -webkit-animation: fadein 8s; /* Safari, Chrome and Opera > 12.1 */
+         -moz-animation: fadein 8s; /* Firefox < 16 */
+          -ms-animation: fadein 8s; /* Internet Explorer */
+           -o-animation: fadein 8s; /* Opera < 12.1 */
+              animation: fadein 8s;
+  
 }
 
-.grid-container2 {
-  background-color: #f4f4f4;
-  padding: 20px;
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr 2fr
+hr{
+	height: 3px;
+	width: 60px;
+	background-color: #000000;
+	margin-left: 0
 }
 
-.grid-container2 div {
-  vertical-align: middle;
-  text-align: center;
+.social{
+    text-align: left;
+}
+  
+.social a{
+    color: #222222;
+    font-size: 20px;
+}
+  
+.social a:hover{
+    color:black;
 }
